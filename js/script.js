@@ -7,19 +7,19 @@
 
 			// route for the home page
 			.when('/', {
-				templateUrl : 'pages/step1.html',
+				templateUrl : '/pages/step1.html',
 				controller  : 'mainController'
 			})
 
 			// route for the about page
 			.when('/step2', {
-				templateUrl : 'pages/step2.html',
+				templateUrl : '/pages/step2.html',
 				controller  : 'aboutController'
 			})
 
 			// route for the contact page
 			.when('/step3', {
-				templateUrl : 'pages/step3.html',
+				templateUrl : '/pages/step3.html',
 				controller  : 'contactController'
 			});
 	});
