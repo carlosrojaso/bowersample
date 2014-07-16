@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="scotchApp">
 <head>
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 </head>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="css/bootstrap-theme.css" rel="stylesheet" >
-<body>
+
 
    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+<body ng-controller="mainController">
 <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -26,26 +26,26 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">CurateMe</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#step2">2</a></li>
+                <li><a href="#step3">3</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
+
+          <div id="main" class="inner cover">
+          <!-- angular templating -->
+			<!-- this is where content will be injected -->
+    		<div ng-view></div>
+            
           </div>
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>CurateMe 2014.</p>
             </div>
           </div>
 
@@ -60,5 +60,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
