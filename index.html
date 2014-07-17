@@ -4,52 +4,27 @@
 <title>CurateMe</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="css/bootstrap-theme.css" rel="stylesheet" >
-
-
-   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 <body ng-controller="mainController">
-<div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Log In</a></li>
+        </ul>
+        <h3 class="text-muted">CurateMe</h3>
+      </div>
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">CurateMe</h3>
-              <ul class="nav masthead-nav">
-                <li><a href="#">Log In</a></li>
-                <li><a href="#step2">2</a></li>
-                <li><a href="#step3">3</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div id="main" class="inner cover">
+        <div id="main" style="margin-top:20px">
           <!-- angular templating -->
 			<!-- this is where content will be injected -->
     		<div ng-view></div>
             
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>CurateMe 2014.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+     <div class="footer text-center">
+        <p>CurateMe 2014.</p>
+      </div> 
+</div>
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
