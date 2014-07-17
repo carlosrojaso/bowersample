@@ -31,7 +31,7 @@
 	});
 
 	scotchApp.controller('aboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
+		$scope.message = 'Step 1';
 	});
 
 	scotchApp.controller('contactController', function($scope) {
