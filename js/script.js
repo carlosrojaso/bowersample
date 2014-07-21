@@ -17,10 +17,46 @@
 				controller  : 'aboutController'
 			})
 
-			// route for the contact page
+		    // route for the contact page
 			.when('/step3', {
 				templateUrl : 'pages/step3.html',
 				controller  : 'contactController'
+			})
+			
+			// route for the contact page
+			.when('/step4', {
+				templateUrl : 'pages/step4.html',
+				controller  : 'stepfourController'
+			})
+			
+			// route for the contact page
+			.when('/step5', {
+				templateUrl : 'pages/step5.html',
+				controller  : 'stepfiveController'
+			})
+			
+			// route for the contact page
+			.when('/step6', {
+				templateUrl : 'pages/step6.html',
+				controller  : 'stepsixController'
+			})
+			
+			// route for the contact page
+			.when('/step7', {
+				templateUrl : 'pages/step7.html',
+				controller  : 'stepsevenController'
+			})
+			
+			// route for the contact page
+			.when('/step8', {
+				templateUrl : 'pages/step8.html',
+				controller  : 'stepeightController'
+			})
+			
+			// route for the contact page
+			.when('/step9', {
+				templateUrl : 'pages/step9.html',
+				controller  : 'stepnineController'
 			});
 	});
 
