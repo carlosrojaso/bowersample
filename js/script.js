@@ -74,7 +74,7 @@
 		$scope.message = 'Step 2';
 	})
 	
-	scotchApp.controller('stepsixController', ['$scope', function($scope) {
+	scotchApp.controller('stepsevenController', ['$scope', function($scope) {
 
 		$scope.sliders = {};
 		$scope.sliders.sliderValue = 0;
