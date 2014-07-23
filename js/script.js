@@ -1,5 +1,5 @@
 	// create the module and name it scotchApp
-	var scotchApp = angular.module('scotchApp', ['ngRoute']);
+	var scotchApp = angular.module('scotchApp', ['ngRoute','ui.bootstrap-slider']);
 
 	// configure our routes
 	scotchApp.config(function($routeProvider) {
@@ -72,4 +72,23 @@
 
 	scotchApp.controller('contactController', function($scope) {
 		$scope.message = 'Step 2';
-	});
+	})
+	
+	scotchApp.controller('stepsevenController', ['$scope', function($scope) {
+
+		$scope.sliders = {};
+		$scope.sliders.sliderValue = 0;
+
+		$scope.testOptions = {
+			min: 1,
+			max: 10,
+			step: 1,
+			orientation : 'vertical',
+			value: 5,
+			rangeValue : [1,10]
+		};
+
+		$scope.sliders.secondSliderValue = 0;
+		$scope.sliders.rangeSliderValue = [ 10, 50 ];
+
+	}]);

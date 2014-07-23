@@ -1,35 +1,124 @@
 <div class="row text-center">
-<h1>You are just 1 step away from your perfect matches</h1>
+<h1>Only 2 Steps left</h1>
 </div>
 <div class="jumbotron text-center">
 <div class="row text-center">
-  <div class="col-md-1"><a href="#step6" ><span class="glyphicon glyphicon-chevron-left"></span></a></div>
-  <div class="col-md-10">
- <form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Your Name*:</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Your email*:</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-    <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">And contact No.:</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-</form>
-  </div>
-  <div class="col-md-1"></div>
+<div class="col-md-3" style="vertical-align:middle;">
+<h3>My height is</h3>
 </div>
-            <p class="lead" style="margin:20px">
-              <a href="#step8" class="btn btn-lg btn-default">Get my recommendations</a>
+<div class="col-md-2">
+<slider ng-model="sliders.sliderValue" min="{{testOptions.min}}" step="{{testOptions.step}}" max="{{testOptions.max}}" value="{{testOptions.value}}" orientation="{{testOptions.orientation}}"></slider>
+			{{sliders.sliderValue}}
+</div>
+<div class="col-md-2">
+<h3>and weight is</h3>
+</div>
+<div class="col-md-2">
+<slider ng-model="sliders.sliderValue" min="{{testOptions.min}}" step="{{testOptions.step}}" max="{{testOptions.max}}" value="{{testOptions.value}}" orientation="{{testOptions.orientation}}"></slider>
+			{{sliders.sliderValue}}
+</div>
+<div class="col-md-3">
+<h3>Lbs</h3>
+</div>
+</div>
+<div class="row text-center">
+<h3>For dresses i normally wear such sizes:</h3>
+</div>      
+<div class="row text-center">
+<div class="col-md-1">
+<a href="#step6" ><span class="glyphicon glyphicon-chevron-left"></span></a>
+</div>
+<div class="col-md-2	">
+<div align="center">
+<div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">xs
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">M
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">L
+   </span></h2></div>
+   </div>
+  </div>
+  <div class="col-md-2">
+  <div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">S
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">L
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">SM
+   </span></h2></div>
+  </div>
+  <div class="col-md-2">
+  <div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">0
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">8
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">16
+   </span></h2></div>
+  </div>
+  <div class="col-md-1">
+  <div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">2
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">10
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">18
+   </span></h2></div>
+  </div>
+  <div class="col-md-2">
+  <div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">4
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">12
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">(14-32)
+   </span></h2></div>
+  </div>
+  <div class="col-md-1">
+  <div class="btn-group-vertical">
+  <span class="input-group-addon btn-primary" >
+        <input type="checkbox">6
+   </span><br/>
+   <span class="input-group-addon btn-primary" >
+        <input type="checkbox">14
+   </span><br/>
+   </h2></div>
+  </div>
+  <div class="col-md-1">
+<a href="#step8"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div>      
+
+<p class="lead" style="margin:20px">
+              <a href="#step8" class="btn btn-lg btn-default">Continue</a>
             </p>
-            
+</div>
+<div class="row text-center">
+<h3>Your current matches. Be sure to refine</h3>
+</div>
+<div class="row" align="center">
+  <img src="http://carlosrojaso.github.io/bowersample/image/match1.png" class="img-responsive" alt="Responsive image">
+</div>
+<div class="row" align="center">
+  <img src="http://carlosrojaso.github.io/bowersample/image/match1.png" class="img-responsive" alt="Responsive image">
+</div>
+<div class="row text-center" style="margin:20px">
+<a href="#step8" class="btn btn-lg btn-default">Refine My Style</a>
 </div>
 </div>
